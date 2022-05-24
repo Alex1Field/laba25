@@ -4,6 +4,7 @@ Cтатистика канала Ted
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 df = pd.read_csv("TED Talks.csv")
 plt.title('Среднее кол-во просмотров за каждый год')
 df[['month', 'year']]=df['date'].str.split(pat=' ',n=1,expand=True)
